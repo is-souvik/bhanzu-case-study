@@ -4,6 +4,7 @@ import StepBooking from '../steps/StepBooking'
 import StepWhatsAppFlow from '../steps/StepWhatsAppFlow'
 import StepReminders from '../steps/StepReminders'
 import StepAICall from '../steps/StepAICall'
+import StepAnalysis from '../steps/StepAnalysis'
 import StepEnd from '../steps/StepEnd'
 
 const STEPS = [
@@ -11,7 +12,8 @@ const STEPS = [
   { id: 1, label: 'WA Flow' },
   { id: 2, label: 'Reminders' },
   { id: 3, label: 'AI Call' },
-  { id: 4, label: 'Summary' },
+  { id: 4, label: 'Analysis' },
+  { id: 5, label: 'Summary' },
 ]
 
 export default function Analysis({ onBack }) {
@@ -109,7 +111,8 @@ export default function Analysis({ onBack }) {
               />
             )}
             {step === 3 && <StepAICall />}
-            {step === 4 && <StepEnd onRestart={() => { setStep(0); onBack() }} />}
+            {step === 4 && <StepAnalysis />}
+            {step === 5 && <StepEnd onRestart={() => { setStep(0); onBack() }} />}
           </div>
         </div>
       </div>
