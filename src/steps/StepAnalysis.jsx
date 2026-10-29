@@ -102,8 +102,7 @@ export default function StepAnalysis() {
     <div className="flex flex-col gap-6">
       <StepHeader
         step={5}
-        title="Where the funnel breaks"
-        description="My read on the drop-offs, what I'd change, and what I'd track. Numbers are estimates based on EdTech industry benchmarks."
+        title="PM Analysis"
       />
 
       <Divider />
@@ -215,15 +214,6 @@ export default function StepAnalysis() {
         </div>
       </div>
 
-      {/* Disclaimer */}
-      <div
-        className="p-3 rounded-xl"
-        style={{ background: '#FAFAFA', border: '1px solid #E2E8F0' }}
-      >
-        <p className="text-[10px] leading-relaxed" style={{ color: '#94A3B8' }}>
-          Funnel estimates based on EdTech industry benchmarks and public conversion data. Actual Bhanzu numbers would sharpen these significantly -- the hypotheses hold at order-of-magnitude level.
-        </p>
-      </div>
     </div>
   )
 }
